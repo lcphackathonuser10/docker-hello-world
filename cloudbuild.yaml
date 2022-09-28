@@ -2,12 +2,12 @@ steps:
   # Docker Build
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 
-           'gcr.io/sample/my-docker-repo/myimage', 
+           'eu.gcr.io/playpen-t8jgd6/my-docker-repo/myimage', 
            '.']
 
   # Docker Push
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 
-           'gcr.io/sample/my-docker-repo/myimage']
+           'eu.gcr.io/playpen-t8jgd6/my-docker-repo/myimage']
 
  
